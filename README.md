@@ -30,3 +30,14 @@ This is a minimalistic and extensible [FastAPI](https://fastapi.tiangolo.com/) t
 
 ## API Documentation
 [http://localhost:8080/docs](http://localhost:8080/docs)
+
+## Development
+### Linting
+ ```bash
+ make lint
+ ```
+
+### Other Commands
+ ```bash
+ make help
+ ```

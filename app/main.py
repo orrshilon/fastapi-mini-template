@@ -17,6 +17,7 @@ def init() -> FastAPI:
     logger.info(
         f"app loaded in [{duration}s]", extra={"duration": duration},
     )
+    logger.info(config.__dict__.items())
     return app
 
 app = init()
