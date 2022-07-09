@@ -5,7 +5,7 @@ from fastapi import FastAPI
 
 from app.core import di
 from app.core.logging import logger, setup_logging
-from app.routes import health, api
+from app.routes import api, health
 
 
 def init() -> FastAPI:
@@ -17,7 +17,8 @@ def init() -> FastAPI:
     setup_logging(config)
     duration = (datetime.utcnow() - start).total_seconds()
     logger.info(
-        f"app loaded in [{duration}s]", extra={"duration": duration},
+        f"app loaded in [{duration}s]",
+        extra={"duration": duration},
     )
     logger.info(config.__dict__.items())
     return app

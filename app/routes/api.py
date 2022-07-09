@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 
 from app.core.di import get_service
-from app.service.service import Service
 from app.routes.models import ApiResponse
+from app.service.service import Service
 
 router = APIRouter()
 
