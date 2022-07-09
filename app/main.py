@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import uvicorn
 from fastapi import FastAPI
 
@@ -19,6 +21,7 @@ def init() -> FastAPI:
     )
     logger.info(config.__dict__.items())
     return app
+
 
 app = init()
 
